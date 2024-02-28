@@ -62,10 +62,17 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
 </script>
 <style type="text/css">
-.mytable{
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	column-gap: 10px;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
 </style>
 	<link rel='stylesheet' id='wp-block-library-css' href='https://www.leuteriothomas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.5'  media='all' />
@@ -128,21 +135,41 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     max-width: 100%;
 }
 
-@media screen and (max-width: 1000px) and (min-width:750px){
-	.mytable{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-
+@media screen and (max-width: 480px){
+.banner.iPhone{
+	background-repeat: repeat !important;
+	background-size: unset !important;
+}
+	.banner h1, .banner-archive h1{
+		font-size: 40px;
 	}
 }
-@media screen and (max-width: 750px){
-	.mytable{
-		display: flex;
-		flex-direction: column;
 
-	}
+
+@media only screen and (max-width: 767px){
+span.circle-border {
+padding-right: 5px !important;
+padding-left: 5px !important;
 }
-		</style>
+	p.heading-text {line-height:20px !important;}
+}
+
+.header-top .navbar-right .top-social span.circle-border {
+    margin: 0 !important;
+    padding-left: 5px !important;
+    padding-right: 20px !important;
+}
+
+.header-top .navbar-right .phone-top {
+    padding-top: 31px !important;
+}
+
+
+@media (max-width: 480px) {
+#main .single-p-border .flexslider li.main-img img {
+    max-height: 250px !important;
+}
+} 		</style>
 				<!-- end of wordpress head -->
 
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -180,100 +207,112 @@ jQuery(document).ready(function(){
 
 
 
-<div class="mytable">
-	<div class="">
-		<div class="team-div">
-		<div class="team-inner">
-		<div class="team-front">
-		<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_4f72a11618044aeaab67f554d997cbe7~mv2.jpeg/v1/fill/w_474,h_474,fp_0.47_0.32,q_80,usm_0.66_1.00_0.01,enc_auto/1561317255762.jpeg" alt="Teams" class="img-responsive team-img"></figure>
-		<div class="hover-content">
-		<h4><strong>Yves RUGASAGUHUNGA</strong></h4>
-		<strong>President / Owner</strong>
-		</div>
-		</div>
-		<div class="team-back">
-		<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_4f72a11618044aeaab67f554d997cbe7~mv2.jpeg/v1/fill/w_474,h_474,fp_0.47_0.32,q_80,usm_0.66_1.00_0.01,enc_auto/1561317255762.jpeg" alt="Teams" class="img-responsive team-img"></figure>
-		<div class="hover-content back-hover">
-		<h4>Yves RUGASAGUHUNGA</h4>
-		<p class="lead">As the Founder and President of PrimECS, LLC, I provide large-scale infrastructure solutions through engineering, leadership, and entrepreneurship. </p>
-		</div>
-		</div>
-		</div>
-		</div>
-	</div>
+	<div class="container" style="margin-left: 0; margin-right: 0;">
+			<!-- <div id="content" class="clearfix"> -->
 
 
-	<div class="">
-		<div class="team-div">
-		<div class="team-inner">
-		<div class="team-front">
-		<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_5dbe88b4cd2f4dae8fe51e36dc298812~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.30,q_80,usm_0.66_1.00_0.01,enc_auto/mick.jpg" alt="Teams" class="img-responsive team-img"></figure>
-		<div class="hover-content">
-		<h4><strong>Mick Giraso
-		</strong></h4>
-		<strong>Vice President / Director of PRIMECS</strong>
-		</div>
-		</div>
-		<div class="team-back">
-		<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_5dbe88b4cd2f4dae8fe51e36dc298812~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.30,q_80,usm_0.66_1.00_0.01,enc_auto/mick.jpg" alt="Teams" class="img-responsive team-img"></figure>
-		<div class="hover-content back-hover">
-		<h4>Mick Giraso
-		</h4>
-		<p class="lead">
-			She is a seasoned structural engineer with a decade of expertise, adept at designing and analyzing complex architectural frameworks. 										</div>
-		</div>
-		</div>
-		</div>
-	</div>
+				<div class="row" style="padding: 0%;">
 
 
-	<div class="">
-		<div class="team-div">
-		<div class="team-inner">
-		<div class="team-front">
-		<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_62a2f3db474048e8a4f2158fb916aa73~mv2.jpg/v1/fill/w_474,h_474,fp_0.30_0.25,lg_1,q_80,enc_auto/Alexia.jpg" alt="Teams" class="img-responsive team-img"></figure>
-		<div class="hover-content">
-		<h4><strong>Alexia Byusa
-		</strong></h4>
-		<strong>Marketing manager</strong>
-		</div>
-		</div>
-		<div class="team-back">
-		<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_62a2f3db474048e8a4f2158fb916aa73~mv2.jpg/v1/fill/w_474,h_474,fp_0.30_0.25,lg_1,q_80,enc_auto/Alexia.jpg" alt="Teams" class="img-responsive team-img"></figure>
-		<div class="hover-content back-hover">
-		<h4>Alexia BYUSA</h4>
-		<p class="lead">
-			With five years of experience in structural engineering, she brings a wealth of knowledge and hands-on expertise to her projects, specializing in the analysis and design of resilient and efficient building structures.
-												</div>
-		</div>
-		</div>
-		</div>
-	</div>
+									<div class="col-md-4">
+										<div class="team-div">
+										<div class="team-inner">
+										<div class="team-front">
+										<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_4f72a11618044aeaab67f554d997cbe7~mv2.jpeg/v1/fill/w_474,h_474,fp_0.47_0.32,q_80,usm_0.66_1.00_0.01,enc_auto/1561317255762.jpeg" alt="Teams" class="img-responsive team-img"></figure>
+										<div class="hover-content">
+										<h4><strong>Yves RUGASAGUHUNGA</strong></h4>
+										<strong>President / Owner</strong>
+										</div>
+										</div>
+										<div class="team-back">
+										<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_4f72a11618044aeaab67f554d997cbe7~mv2.jpeg/v1/fill/w_474,h_474,fp_0.47_0.32,q_80,usm_0.66_1.00_0.01,enc_auto/1561317255762.jpeg" alt="Teams" class="img-responsive team-img"></figure>
+										<div class="hover-content back-hover">
+										<h4>Yves RUGASAGUHUNGA</h4>
+										<p class="lead">As the Founder and President of PrimECS, LLC, I provide large-scale infrastructure solutions through engineering, leadership, and entrepreneurship. </p>
+										</div>
+										</div>
+										</div>
+										</div>
+									</div>
 
 
-	<div class="">
-		<div class="team-div">
-		<div class="team-inner">
-		<div class="team-front">
-		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_210ca8a3431f4f3da93e188f1afc8748~mv2.png" alt="Teams" class="img-responsive team-img"></figure>
-		<div class="hover-content">
-		<h4><strong>Jean Marie NKURUNZIZA</strong></h4>
-		<strong>Senior Engineer</strong>
-		</div>
-		</div>
-		<div class="team-back">
-		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_210ca8a3431f4f3da93e188f1afc8748~mv2.png" alt="Teams" class="img-responsive team-img"></figure>
-		<div class="hover-content back-hover">
-		<h4>Jean Marie NKURUNZIZA</h4>
-		<p class="lead">
+									<div class="col-md-4">
+										<div class="team-div">
+										<div class="team-inner">
+										<div class="team-front">
+										<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_5dbe88b4cd2f4dae8fe51e36dc298812~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.30,q_80,usm_0.66_1.00_0.01,enc_auto/mick.jpg" alt="Teams" class="img-responsive team-img"></figure>
+										<div class="hover-content">
+										<h4><strong>Mick Giraso
+                                        </strong></h4>
+										<strong>Vice President / Director of PRIMECS</strong>
+										</div>
+										</div>
+										<div class="team-back">
+										<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_5dbe88b4cd2f4dae8fe51e36dc298812~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.30,q_80,usm_0.66_1.00_0.01,enc_auto/mick.jpg" alt="Teams" class="img-responsive team-img"></figure>
+										<div class="hover-content back-hover">
+										<h4>Mick Giraso
+                                        </h4>
+										<p class="lead">
+											She is a seasoned structural engineer with a decade of expertise, adept at designing and analyzing complex architectural frameworks. 										</div>
+										</div>
+										</div>
+										</div>
+									</div>
 
-			He is a courageous and dynamic structural engineer with five years of experience, renowned for his fearless approach to challenging projects and his relentless pursuit of excellence.
-												</div>
-		</div>
-		</div>
-		</div>
-	</div>
+
+									<div class="col-md-4">
+										<div class="team-div">
+										<div class="team-inner">
+										<div class="team-front">
+										<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_62a2f3db474048e8a4f2158fb916aa73~mv2.jpg/v1/fill/w_474,h_474,fp_0.30_0.25,lg_1,q_80,enc_auto/Alexia.jpg" alt="Teams" class="img-responsive team-img"></figure>
+										<div class="hover-content">
+										<h4><strong>Alexia Byusa
+                                        </strong></h4>
+										<strong>Marketing manager</strong>
+										</div>
+										</div>
+										<div class="team-back">
+										<figure class="featured-image"><img src="https://static.wixstatic.com/media/9ee5ac_62a2f3db474048e8a4f2158fb916aa73~mv2.jpg/v1/fill/w_474,h_474,fp_0.30_0.25,lg_1,q_80,enc_auto/Alexia.jpg" alt="Teams" class="img-responsive team-img"></figure>
+										<div class="hover-content back-hover">
+										<h4>Alexia BYUSA</h4>
+                                        <p class="lead">
+											With five years of experience in structural engineering, she brings a wealth of knowledge and hands-on expertise to her projects, specializing in the analysis and design of resilient and efficient building structures.
+																				</div>
+										</div>
+										</div>
+										</div>
+									</div>
+
+
+									<div class="col-md-4">
+										<div class="team-div">
+										<div class="team-inner">
+										<div class="team-front">
+										<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_210ca8a3431f4f3da93e188f1afc8748~mv2.png" alt="Teams" class="img-responsive team-img"></figure>
+										<div class="hover-content">
+										<h4><strong>Jean Marie NKURUNZIZA</strong></h4>
+										<strong>Senior Engineer</strong>
+										</div>
+										</div>
+										<div class="team-back">
+										<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_210ca8a3431f4f3da93e188f1afc8748~mv2.png" alt="Teams" class="img-responsive team-img"></figure>
+										<div class="hover-content back-hover">
+										<h4>Jean Marie NKURUNZIZA</h4>
+                                        <p class="lead">
+
+											He is a courageous and dynamic structural engineer with five years of experience, renowned for his fearless approach to challenging projects and his relentless pursuit of excellence.
+																				</div>
+										</div>
+										</div>
+										</div>
+									</div>
+
+				</div>
+
+
+			<!-- </div> end #content -->
 </div>
+
 
 		<script>
 		jQuery(document).ready(function(){
