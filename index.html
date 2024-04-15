@@ -14,7 +14,7 @@
 var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
 </script>
 
-		<title>Our Team - Leuterio Thomas, LLC</title>
+		<title>Our Team - PrimECS, LLC</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- media-queries.js (fallback) -->
@@ -211,8 +211,7 @@ jQuery(document).ready(function(){
 		<div class="team-back">
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_12eff989fb694e47982355b05aff9a7e~mv2.png" alt="Teams" class="img-responsive team-img"></figure>
 		<div class="hover-content back-hover">
-		<h4>Mick Giraso
-		</h4>
+		<h4>Mick Giraso</h4>
 		<p class="lead">
 			She is a seasoned structural engineer with a decade of expertise, adept at designing and analyzing complex architectural frameworks. 										</div>
 		</div>
@@ -239,6 +238,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_3fe86e9a385e477da8ab06276ee9fa2d~mv2.png" alt="Teams" class="img-responsive team-img"></figure>
 		<div class="hover-content back-hover">
 		<h4>Accounts Manager</h4>
+		<p class="lead">
+			Secures contracts, manages client relations, and oversees financial aspects of projects.
+		</p>
 </div>
 		</div>
 		</div>
@@ -251,7 +253,7 @@ jQuery(document).ready(function(){
 		<div class="team-front">
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_9260a269f2754581b2e829bee6703206~mv2.png"></figure>
 		<div class="hover-content">
-		<h4><strong>Randal Chase</strong></h4>
+		<h4><strong>Randy Chase</strong></h4>
 		<strong>Project Manager</strong>
 		</div>
 		</div>
@@ -259,6 +261,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_9260a269f2754581b2e829bee6703206~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Project Manager</h4>
+		<p class="lead">
+			Leads teams, plans projects, keeps them on time, budget, and within scope.
+		</p>
 </div>
 		</div>
 		</div>
@@ -278,6 +283,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://res.cloudinary.com/bn47/image/upload/v1712684048/11laetitia_mpcara.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Administrative Assistant</h4>
+		<p class="lead">
+			Supports office operations, schedules, phones, documents, and keeps things running smoothly.
+		</p>
 </div>
 		</div>
 		</div>
@@ -297,6 +305,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_78e21804f92b49fbbc4dcd685609fbb2~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Engineer in Training</h4>
+		<p class="lead">
+			Learns from a more experienced engineer, helping with engineering tasks.
+		</p>
 </div>
 		</div>
 		</div>
@@ -316,6 +327,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_eee7dcfda4ab4a728c1b4bf82e5dc4ce~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Assistant Business Manager</h4>
+		<p class="lead">
+			Helps with everyday business tasks, reports and keeping things organized.
+		</p>
 </div>
 		</div>
 		</div>
@@ -336,6 +350,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_560a039c74bb4499824144566d10c346~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Executive Advisor</h4>
+		<p class="lead">
+			Smart helper for administrators, giving advice on big choices.
+		</p>
 </div>
 		</div>
 		</div>
@@ -379,6 +396,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_981166de58a046e8a7ec1a93d146c83a~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Engineering Intern</h4>
+		<p class="lead">
+			Learns about engineering by helping on projects with real engineers.
+		</p>
 </div>
 		</div>
 		</div>
@@ -398,6 +418,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://res.cloudinary.com/bn47/image/upload/v1713184148/KEKE_fjjttf.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Engineering Intern</h4>
+		<p class="lead">
+			Learns about engineering by helping on projects with real engineers.
+		</p>
 </div>
 		</div>
 		</div>
@@ -417,6 +440,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_0a3d00af9e554525b44a0e8b520ade55~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Project Engineer</h4>
+		<p class="lead">
+			Builds the bridge between plans and reality on a construction project. Checks if materials are right, things get built according to the plans, and everything stays on schedule.
+		</p>
 </div>
 		</div>
 		</div>
@@ -436,6 +462,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_80e06d4742d04778953848a5c61cb6e2~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Construction Inspector</h4>
+		<p class="lead">
+			Ensures construction sites are safe and follow the plans. 
+		</p>
 </div>
 		</div>
 		</div>
@@ -455,6 +484,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_faacb3951ef848e296d66a4641995cd5~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Project Superintendent</h4>
+		<p class="lead">
+			Makes sure everything gets built right, on time, and safely. Orders supplies, keeps workers on schedule, and fixes any problems that pop up.
+		</p>
 </div>
 		</div>
 		</div>
@@ -474,6 +506,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_bfbc5afcc03b4114a114e2c9e339e720~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Engineering Intern</h4>
+		<p class="lead">
+			Learns about engineering by helping on projects with real engineers.
+		</p>
 </div>
 		</div>
 		</div>
@@ -493,6 +528,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_6ef281cf5b4e459780c6de5dadfa0a4e~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Office Engineer</h4>
+		<p class="lead">
+			CAD, Design, Takeoffs, Task management.
+		</p>
 </div>
 		</div>
 		</div>
@@ -512,6 +550,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_0c53b93d8764438f823c06e1e83c4622~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Office Engineer</h4>
+		<p class="lead">
+			CAD, Design, Takeoffs, Task management.
+		</p>
 </div>
 		</div>
 		</div>
@@ -531,6 +572,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_e671cd44847b454ea6f8f0d4d49d766c~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Office Engineer</h4>
+		<p class="lead">
+			CAD, Design, Takeoffs, Task management.
+		</p>
 </div>
 		</div>
 		</div>
@@ -551,6 +595,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_16518350641e49e7b9318ec74e9119f5~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Office upkeep</h4>
+		<p class="lead">
+			Cleaning of the office, regular maintenance
+		</p>
 </div>
 		</div>
 		</div>
@@ -571,6 +618,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_7d0f8e94bb5947fb97b8edf6de3913f8~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Construction Management Intern</h4>
+		<p class="lead">
+			Learn about project scheduling, budgeting and defining project goals
+		</p>
 </div>
 		</div>
 		</div>
@@ -591,6 +641,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_82e36104e59c40e488bfa18433694d4e~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Laborer</h4>
+		<p class="lead">
+			Construction site preparation, Machine Helper, Champs clean up
+		</p>
 </div>
 		</div>
 		</div>
@@ -611,6 +664,9 @@ jQuery(document).ready(function(){
 		<figure class="featured-image"><img src="https://static.wixstatic.com/media/7bacf5_92027db40e79476686f1bef55871c077~mv2.png"></figure>
 		<div class="hover-content back-hover">
 		<h4>Office Engineer</h4>
+		<p class="lead">
+			CAD, Design, Takeoffs, Task management.
+		</p>
 </div>
 		</div>
 		</div>
